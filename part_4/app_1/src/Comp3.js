@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Comp3 =(props)=>{
+// const Comp3 =(props)=>{
+const Comp3 =({members})=>{
     
-    const membersList  = props.members.map( eachMember => {
+    // const membersList  = props.members.map( eachMember => {
+    const membersList = members.map( eachMember=>{
             return(
                 <div className="membersList" key= { eachMember.id }>
                     <h1>List items</h1>

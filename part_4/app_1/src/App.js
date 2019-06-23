@@ -12,6 +12,7 @@
 
 // use camel case naming convention
 // avoid using underscore in the class names or file names
+
 import React from 'react';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
@@ -53,7 +54,6 @@ class App extends React.Component{
       </div>
     );
   }
-
 }
 
 export default App;
