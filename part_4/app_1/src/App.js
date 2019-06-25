@@ -34,6 +34,14 @@ class App extends React.Component{
     ]
   };
 
+  addMember =(member)=>{
+
+    let members=[...this.state.members, member];
+    this.setState({
+      members: members
+    });
+  }
+
   render(){
     return (
       <div className="App">
@@ -60,7 +68,7 @@ class App extends React.Component{
         <h1>Passing List for UI based component where decision is taken using cinditional operator</h1>
         <Comp5 members={ this.state.members } />
         <h1>Forms to add members to the List</h1>
-        <AddMember />
+        <AddMember addMember={ this.addMember }/>
       </div>
     );
   }
