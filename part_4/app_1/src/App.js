@@ -20,7 +20,8 @@ import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 import Comp3 from './Comp3';
 import Comp4 from './Comp4';
-import Comp5 from './Comp5'
+import Comp5 from './Comp5';
+import AddMember from './AddMember'
 
 
 class App extends React.Component{
@@ -58,7 +59,8 @@ class App extends React.Component{
         <hr/>
         <h1>Passing List for UI based component where decision is taken using cinditional operator</h1>
         <Comp5 members={ this.state.members } />
-
+        <h1>Forms to add members to the List</h1>
+        <AddMember />
       </div>
     );
   }
