@@ -9,6 +9,8 @@
 // ui based component possess those components which do not possess any state
 // class based component uses classess to render the components
 // ui based components makes use of functions to render the stateless components such as header, footer etc 
+// commit 4: Comp3 is a stateless component, Comp3 function used to create a ui based component
+// commit 5: Comp4 contains conditional statement which renders the component based on certain condition
 
 // use camel case naming convention
 // avoid using underscore in the class names or file names
@@ -16,7 +18,8 @@
 import React from 'react';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
-import Comp3 from './Comp3'
+import Comp3 from './Comp3';
+import Comp4 from './Comp4';
 
 
 class App extends React.Component{
@@ -34,23 +37,22 @@ class App extends React.Component{
       <div className="App">
         <h1>Welcome to React js</h1>
         <p>front end development</p>
-        
         <h1>Passing each member</h1>
         <Comp1  name="Steve Rogers" age="30" />
-        
         <hr/>
-        <Comp1  name="Tony Stark" age="40" />
-        
+        <Comp1  name="Tony Stark" age="40" />        
         <hr/>
         <hr/>
-        
         <h1>Passing List for class based Component</h1>
         <Comp2 members={ this.state.members } />
         <hr/>
         <hr/>
-        
         <h1>Passing List for UI based component</h1>
         <Comp3 members={ this.state.members } />
+        <hr/>
+        <hr/>
+        <h1>Passing List for UI based component based on condition</h1>
+        <Comp4 members={ this.state.members } />
       </div>
     );
   }
