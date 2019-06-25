@@ -11,6 +11,8 @@
 // ui based components makes use of functions to render the stateless components such as header, footer etc 
 // commit 4: Comp3 is a stateless component, Comp3 function used to create a ui based component
 // commit 5: Comp4 contains conditional statement which renders the component based on certain condition
+// commit 6: [...this.state.members, member] this is a spread operator which refers to each of the entity of the state each at a time
+// commit 7: deleting a value from state 
 
 // use camel case naming convention
 // avoid using underscore in the class names or file names
@@ -35,11 +37,21 @@ class App extends React.Component{
   };
 
   addMember =(member)=>{
-
     let members=[...this.state.members, member];
     this.setState({
       members: members
     });
+  }
+
+  deleteMember =(id)=>{
+
+    let members= this.state.members.filter( eachMember=>{
+      return  eachMember.id !== id
+    })
+
+    this.setState({
+      members: members
+    })
   }
 
   render(){
@@ -66,9 +78,10 @@ class App extends React.Component{
         <hr/>
         <hr/>
         <h1>Passing List for UI based component where decision is taken using cinditional operator</h1>
-        <Comp5 members={ this.state.members } />
+        <Comp5 members={ this.state.members } deleteMember={ this.deleteMember} />
         <h1>Forms to add members to the List</h1>
         <AddMember addMember={ this.addMember }/>
+
       </div>
     );
   }
