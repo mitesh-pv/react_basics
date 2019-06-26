@@ -6,7 +6,8 @@
 **Step 2:** Start project to check installation
 ### `npm start`
 
-<br />
+\
+\
 ## Life Cycle of a React App
 
 ![React App Life Cycle](./images/lifecycle.png)
