@@ -7,7 +7,7 @@
 ### `npm start`
 
 \
-\
+
 ## Life Cycle of a React App
 
 ![React App Life Cycle](./images/lifecycle.png)
