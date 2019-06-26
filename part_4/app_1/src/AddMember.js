@@ -15,7 +15,8 @@ class AddMember extends Component{
 
     handleSubmit =(event)=>{
         event.preventDefault();
-        console.log(this.state);
+        // console.log(this.state);
+        this.props.addMember(this.state);
     }
     render(){
         return(
