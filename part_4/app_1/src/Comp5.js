@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Comp5 =({members, deleteMember})=>{
 
     return (
@@ -11,7 +12,7 @@ const Comp5 =({members, deleteMember})=>{
                             <p>Name: { eachMember.name}</p>
                             <p>Age: { eachMember.age}</p>
                             <p>ID: { eachMember.id}</p>
-                            <button onClick={ ()=> {deleteMember(eachMember.id)} }>Delete</button>
+                            <button onClick={ ()=>{ deleteMember(eachMember.id) } }>Delete</button>
                         </div>
                     ): null
                 })
@@ -21,4 +22,3 @@ const Comp5 =({members, deleteMember})=>{
 }
         
 export default Comp5;
-

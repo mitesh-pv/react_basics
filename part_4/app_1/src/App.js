@@ -24,7 +24,7 @@ import Comp3 from './Comp3';
 import Comp4 from './Comp4';
 import Comp5 from './Comp5';
 import AddMember from './AddMember'
-
+import './memPage.css'
 
 class App extends React.Component{
 
@@ -81,7 +81,6 @@ class App extends React.Component{
         <Comp5 members={ this.state.members } deleteMember={ this.deleteMember} />
         <h1>Forms to add members to the List</h1>
         <AddMember addMember={ this.addMember }/>
-
       </div>
     );
   }
