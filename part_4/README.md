@@ -6,7 +6,7 @@
 **Step 2:** Start project to check installation
 ### `npm start`
 
-\
+
 
 ## Life Cycle of a React App
 
