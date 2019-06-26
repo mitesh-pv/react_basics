@@ -4,8 +4,8 @@
 ### `npx create-react-app app_1`
 
 **Step 2:** Start project to check installation
-### `npm start`\
-
+### `npm start`
+<br/>
 
 
 ## Life Cycle of a React App
