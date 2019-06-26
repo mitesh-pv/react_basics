@@ -1,12 +1,13 @@
 import React from 'react';
 import Todos from './Todos'
+import AddToDo from './AddToDo'
 
 class App extends React.Component{
 
   state={
     todos: [
-      {id: 1, content: 'Write the code'}, 
-      {id: 2, content: 'Play pubg'}
+      // {id: 1, content: 'Write the code'}, 
+      // {id: 2, content: 'Play pubg'}
     ]
   }
 
@@ -19,11 +20,21 @@ class App extends React.Component{
     })
   }
 
+  addToDo =(todo)=>{
+    todo.id=Math.random();
+    const todos =[...this.state.todos, todo];
+    this.setState({
+      todos
+    })
+
+  }
+
   render(){
     return(
       <div className="App container">
-          <h1 className="center blue-text"> ToDos List</h1>
+          <h1 className="center blue-text"> ToDo's List</h1>
           <Todos todos={this.state.todos} deleteToDo={this.deleteToDo} />
+          <AddToDo addToDo={this.addToDo} />
       </div>
     );
   }
