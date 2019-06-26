@@ -8,4 +8,4 @@
 
 ## React App Life Cycle
 
-![React App Life Cycle](/images/lifecycle.png)
+![React App Life Cycle](./images/lifecycle.png)
