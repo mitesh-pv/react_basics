@@ -1,7 +1,16 @@
+// adding router information to the props
+
+
 import React from 'react'
 
-const Contact =()=>{
+const Contact =(props)=>{
 
+    // console.log(props);
+
+    // redirecting to the about page after 2 seconds
+    setTimeout(()=>{
+        props.history.push('/About')
+    }, 2000);
     return(
         <div className="container">
             <h4 className="center">Contact</h4>

@@ -8,7 +8,7 @@ const Navbar =()=>{
             <div className="container">
                 <a  href="./Home" className="brand-logo">JOHN WICK</a>
                 <ul className="right">
-                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/About">About</a></li>
                     <li><a href="/Contact">Contact</a></li>
                 </ul>
