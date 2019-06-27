@@ -17,4 +17,5 @@ The main difference between Link and NavLink is that the NavLink applies the act
 * **withRouter function**:
 It wraps the Navbar component with the higher order component such that it can hold the properties of Router class
 
-
+**STEP 2:** Install Axios. 
+### `npm install axios`
