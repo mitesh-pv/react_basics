@@ -21,3 +21,5 @@ It wraps the Navbar component with the higher order component such that it can h
 
 **STEP 2:** Install Axios. 
 ### `npm install axios`
+get method is used to get the data from the api
+### `axios.get(https://jsonplaceholder.typicode.com/posts/)`
