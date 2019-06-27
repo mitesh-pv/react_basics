@@ -10,11 +10,11 @@ Steps to get the project started.
 ### `npm install react-router-dom`
 
 <br/><br/>
--**Link and NavLink:**
+* **Link and NavLink:**
 The Link and NavLink calls event.preventDefault() function to prevent the reloading the page upon clicking the link.
 The main difference between Link and NavLink is that the NavLink applies the active class to that component.
 
--**withRouter function**:
+* **withRouter function**:
 It wraps the Navbar component with the higher order component such that it can hold the properties of Router class
 
 
