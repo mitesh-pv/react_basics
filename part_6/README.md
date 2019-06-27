@@ -18,3 +18,11 @@ The main difference between Link and NavLink is that the NavLink applies the act
 </br>
 ## withRouter function 
 It wraps the Navbar component with the higher order component such that it can hold the properties of Router class
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
