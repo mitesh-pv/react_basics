@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Hoc from '../hoc/Hoc'
 const About =()=>{
 
     return(
@@ -11,4 +11,4 @@ const About =()=>{
     )
 }
 
-export default About
+export default Hoc(About) 
