@@ -9,3 +9,5 @@
 **PART 4:** Setting up the react app.
 
 **PART 5:** TODO list app 
+
+**PART 6:** Portfolio App
