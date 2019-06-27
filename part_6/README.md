@@ -9,6 +9,7 @@ Steps to get the project started.
 ### `cd part_6/portfolioapp`
 ### `npm install react-router-dom`
 
+
 <br/>
 ## Link and NavLink
 The Link and NavLink calls event.preventDefault() function to prevent the reloading the page upon clicking the link.
