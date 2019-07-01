@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 
 class Comp2 extends Component{
-
     
-    render(){
-    
+    render(){    
         const membersList  = this.props.members.map( eachMember => {
             return(
                 <div className="membersList" key= { eachMember.id }>
