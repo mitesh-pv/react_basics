@@ -27,3 +27,6 @@ get method is used to get the data from the api
 
 **STEP 3:** Install Redux library
 ### `npm install redux react-redux`
+
+
+![App Image](./image/screenshot.png)
