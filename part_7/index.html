@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- script -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- script -->
+
+    <title>PART 1</title>
+</head>
+<body>
+    
+    <div id="app"></div>
+
+    <script>
+        
+        const { createStore }=Redux;
+
+        const initState ={
+            todos: [],
+            posts: []
+        }
+
+        //  register the reducer function
+        function appReducer(state=initState, action){
+            console.log(action, state);
+            
+            if(action.type='ADD_TODO'){
+                // update the state
+                return(
+                    {
+                        ...state,
+                        todos: [...state.todos, action.todo]
+                    }
+                )
+            }
+
+            if(action.type='ADD_POST'){
+                return(
+                    {
+                        ...state,
+                        posts: [...state.posts, action.post]
+                    }
+                )
+            }
+        }
+
+        const store=createStore(appReducer);
+
+        store.subscribe(()=>{
+            console.log('state updated');
+            console.log(store.getState());
+        })
+
+        // define the action
+        const todoAction={type: 'ADD_TODO', todo: 'do some work'};
+
+        // dispatch the action to the reducer
+        store.dispatch(todoAction);
+        store.dispatch({type: 'ADD_TODO', todo: 'do some coding'});
+        store.dispatch({type: 'ADD_POST', post: 'blog post on java'});
+
+    </script>
+</body>
+</html>
