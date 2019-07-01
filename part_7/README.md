@@ -5,4 +5,4 @@
 
 **Redux addition and update of the data**
 
-![Redux]('./images/redux.png');
+![Redux]('./images/redux.png')
