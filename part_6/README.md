@@ -23,3 +23,7 @@ It wraps the Navbar component with the higher order component such that it can h
 ### `npm install axios`
 get method is used to get the data from the api
 ### `axios.get(https://jsonplaceholder.typicode.com/posts/)`
+
+
+**STEP 3:** Install Redux library
+### `npm install redux react-redux`
