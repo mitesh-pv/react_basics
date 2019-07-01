@@ -12,4 +12,4 @@
 
 **PART 6:** Portfolio App
 
-**PART 6:** Use of Redux to use the centralized data storage.
+**PART 7:** Use of Redux to use the centralized data storage.
